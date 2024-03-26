@@ -1,19 +1,8 @@
 terraform {
-  cloud {
-    organization = "mymadlab"
-    workspaces {
-      tags = ["facility", "infra"]
-    }
-  }
-
   required_providers {
-    provider1 = {
-      source  = "owner/provider1"
-      version = "#.#.#"
+    tfe = {
+      source  = "hashicorp/tfe"
+      version = "0.52.0"
     }
   }
-}
-
-provider "provider1" {
-  
 }
