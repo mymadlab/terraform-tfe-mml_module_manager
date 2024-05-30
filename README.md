@@ -9,7 +9,7 @@ Responsible for creating, updating, and deleting modules in terraform cloud.
 ```HCL
 module "tfe_module_manager" {
   source  = "app.terraform.io/mymadlab/mml_module_manager/tfe"
-  version = "~> 1.0.0"
+  version = "~> 0.1.0"
 
   module_name       = "name_of_the_module"
   tfe_org           = "name_of_TFE_org"
